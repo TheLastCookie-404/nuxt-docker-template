@@ -1,0 +1,26 @@
+services:
+  app-dev: 
+    build:
+      context: . # path to Dockerfile
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+      # - "24678:24678" # For Vite HMR if using Nuxt
+    volumes:
+      - .:/app
+      - /app/node_modules
+
+  app-prod:
+    build:
+      context: . # path to Dockerfile
+      dockerfile: Dockerfile.prod
+    ports:
+      - "8080:80"
+
+# To build or run a dev container
+# docker compose up app-dev --build
+# docker compose up app-dev
+
+# To build or run a prod container
+# docker compose up app-prod --build
+# docker compose up app-prod
