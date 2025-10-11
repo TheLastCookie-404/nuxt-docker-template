@@ -1,7 +1,3 @@
-# FROM node:lts-alpine3.22
-# WORKDIR /app
-# COPY . .
-
 # Build Stage 1
 
 FROM node:22-alpine AS build
