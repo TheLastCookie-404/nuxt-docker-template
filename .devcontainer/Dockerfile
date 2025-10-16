@@ -9,4 +9,4 @@ RUN pnpm i
 
 COPY . .
 
-CMD [ "pnpm", "dev" ]
+# CMD [ "pnpm", "dev" ]
