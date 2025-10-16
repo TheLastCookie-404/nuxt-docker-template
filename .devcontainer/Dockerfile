@@ -3,9 +3,9 @@ WORKDIR /app
 
 RUN corepack enable
 
-COPY package.json pnpm-lock.yaml ./
+# COPY package.json pnpm-lock.yaml ./
 
-RUN pnpm i
+# RUN pnpm i
 
 COPY . .
 
