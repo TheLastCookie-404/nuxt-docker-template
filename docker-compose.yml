@@ -2,26 +2,10 @@ version: "3.8"
 services:
   app:
     build:
-      context: . 
+      context: .
       dockerfile: Dockerfile
     ports:
       - "8080:80"
-      
-  # app-dev: 
-  #   build:
-  #     context: . 
-  #     dockerfile: Dockerfile.dev
-  #   ports:
-  #     - "3000:3000"
-  #   volumes:
-  #     - .:/app
-  #     - /app/node_modules
-
-
-# To build or run a dev container
-# docker compose up app-dev --build
-# docker compose up app-dev
-
 # To build or run a prod container
-# docker compose up app-prod --build
-# docker compose up app-prod
+# docker compose up app --build
+# docker compose up app
