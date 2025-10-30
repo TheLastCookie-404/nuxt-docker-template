@@ -1,4 +1,4 @@
-# Nuxt 4 Docker Starter
+# Nuxt 4 Docker Template
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -17,3 +17,4 @@ docker compose up app
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
